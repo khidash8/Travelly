@@ -1,0 +1,303 @@
+/* Global elements styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.1rem;
+}
+h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+}
+button {
+  background: #4c6e97;
+  padding: 2rem 6rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 2rem auto;
+}
+p,
+h4 {
+  font-size: 180%;
+}
+/* Navigation header Styling */
+.main-head {
+  background-color: #131c27;
+  color: white;
+}
+.main-head nav {
+  display: flex;
+  min-height: 10vh;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main-head ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo {
+  flex: 1 1 40rem;
+}
+
+/* hero section styling */
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/images/landing-page.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h2 {
+  padding: 2rem;
+}
+.hero-section button {
+  /* transition: all 0.5s ease-in-out; */
+}
+.hero-section button:hover {
+  animation: button-animation 1s alternate forwards;
+  /* background-color: orangered;
+  font-size: 2rem;
+  border-radius: 1rem; */
+}
+
+/* Location Section with animated clouds */
+/* 1. Location-section */
+.locations-section {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/images/new-york-page.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+.location-main-head {
+  width: 90%;
+  margin: auto;
+}
+.location-main-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+}
+.location-main-head h3 {
+  padding: 1rem 0rem;
+  font-size: 4rem;
+  /* add gradient to the text */
+  background: rgb(255, 165, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 165, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 62%,
+    rgba(110, 255, 0, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 2. Clouds-section */
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+.animated-cloud-1 {
+  top: 0%;
+  animation: cloud-animation 5s infinite ease-in-out;
+}
+.animated-cloud-2 {
+  top: 10%;
+  z-index: -1;
+  opacity: 0.3;
+  animation: cloud-animation 3s infinite ease-in-out;
+}
+
+/* benefits section */
+.benefits-section {
+  min-height: 100vh;
+}
+.benefits-main-head {
+  margin-top: 0.5rem;
+  color: white;
+  min-height: 20vh;
+  background-color: #131c27;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+.cards-div-main {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  padding: 2rem;
+  min-height: 80vh;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.icon {
+  background-color: #4c6e97;
+  text-align: center;
+  padding: 1rem;
+}
+.icon img {
+  height: 100px;
+}
+.card {
+  min-height: 50vh;
+  max-width: 50vw;
+  flex: 1 1 auto;
+  margin: 1rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 20px rgba(0, 0, 0, 0.5);
+}
+.card-article {
+  padding: 10rem;
+}
+
+/* Form-section */
+.Form-section {
+  min-height: 80vh;
+  background: url("/images/contact-mountain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 250%;
+}
+.form-wrapper {
+  width: 50rem;
+  min-height: 30rem;
+  margin: auto;
+  background-color: #1423354e;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+}
+label {
+  padding: 0rem 2rem;
+}
+input {
+  padding: 1rem 0rem;
+}
+.form-wrapper button {
+  width: 100%;
+}
+
+/* footer-section */
+.footer-section {
+  background: #131c27;
+  min-height: 10vh;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  font-size: 180%;
+}
+.footer-section nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.footer-section h5 {
+  flex: 3 1 30rem;
+}
+.footer-section ul {
+  flex: 1 1 30rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Responsiveness */
+/* at this point - the font size should decrease and nav align to the centre */
+@media (max-width: 933px) {
+  .main-head nav {
+    text-align: center;
+  }
+  .main-head h1 {
+    padding: 3rem;
+  }
+  body {
+    font-size: 60%;
+  }
+  .animated-cloud-1 {
+    height: 60%;
+    z-index: -1;
+  }
+  .animated-cloud-2 {
+    z-index: -2;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
+  .card {
+    min-width: 80vw;
+    font-size: 1.8rem;
+    height: 30%;
+  }
+}
+
+/* animations */
+/* 1. Button */
+@keyframes cloud-animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
